@@ -90,7 +90,7 @@ h1 { font-size: 4.5rem; line-height: 1.1; letter-spacing: -2px; margin-bottom: 1
 
 /* Project Grid */
 .projects { padding: 5rem 10%; background: var(--gray-light); }
-.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 3rem; }
+.project-grid { display: flex; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 3rem; }
 
 .project-card {
     background: var(--white);
@@ -371,6 +371,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
 
 
