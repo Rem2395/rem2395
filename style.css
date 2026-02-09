@@ -125,8 +125,7 @@ footer { padding: 2rem 10% 2rem; border-top: 1px solid var(--border);background-
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     .project-grid { grid-template-columns: 1fr;
-    .tags {display: flex;
-    }
+  
 }
 
 
@@ -347,29 +346,6 @@ button:hover { background-color: #357abd; }
 .nav-btn {
     display: none;
 
-}
-
-
-
-/*responssive */
-
-/* Mobile first (phones) */
-body {
-  font-size: 16px;
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-  .navbar {
-    display: flex;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 
