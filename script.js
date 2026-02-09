@@ -35,48 +35,7 @@ if (typewriter) {
 
 
 
-/*TESTIMONIAL */
 
-const slides = document.querySelectorAll('.testimonial-slide');
-const dots = document.querySelectorAll('.dot');
-const nextBtn = document.getElementById('nextBtn');
-const prevBtn = document.getElementById('prevBtn');
-
-let currentSlide = 0;
-
-function updateSlides(index) {
-    // Remove active class from all
-    slides.forEach(slide => slide.classList.remove('active'));
-    dots.forEach(dot => dot.classList.remove('active'));
-
-    // Set new active
-    slides[index].classList.add('active');
-    dots[index].classList.add('active');
-}
-
-nextBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSlides(currentSlide);
-});
-
-prevBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    updateSlides(currentSlide);
-});
-
-// Dot Navigation
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        currentSlide = index;
-        updateSlides(currentSlide);
-    });
-});
-
-// Optional: Auto-play
-setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSlides(currentSlide);
-}, 5000); // Changes every 5 seconds
 
 
 
@@ -122,4 +81,5 @@ form.addEventListener("submit", async (e) => {
         submitBtn.disabled = false;
         submitBtn.innerText = "Send Message";
     }
+
 });
