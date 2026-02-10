@@ -181,6 +181,7 @@ nav {
 
 .project-info {
     padding: 1.5rem; 
+    width: 100%;
 }
 
 .tags { 
@@ -456,6 +457,7 @@ button:hover { background-color: #357abd; }
     font-size: 0.95rem;
   }
 }
+
 
 
 
