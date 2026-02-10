@@ -38,45 +38,116 @@ nav {
 
 /* Hero */
 
+/* HERO SECTION */
+.hero {
+  padding: 6rem 8%;
+  background: #ffffff;
+}
 
-.hero .row {
+.hero-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
-/*two column*/
-
-.column, .column2 {
-  flex: 1 1 100%;
-  padding: 10px;
+/* LEFT SIDE */
+.hero-text {
+  flex: 1;
 }
 
-.column2 img {
+.hero-role {
+  display: inline-block;
+  font-family: 'Fira Code', monospace;
+  color: #0071e3;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  max-width: 520px;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* RIGHT SIDE */
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
   width: 100%;
+  max-width: 520px;
   height: auto;
   object-fit: cover;
+  border-radius: 12px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.typewriter { font-family: 'Fira Code', monospace; color: var(--blue); margin-bottom: 1rem; display: block; }
-h1 { font-size: 4.5rem; line-height: 1.1; letter-spacing: -2px; margin-bottom: 1.5rem; }
-.hero p { font-size: 1.25rem; color: var(--gray-medium); max-width: 600px; margin-bottom: 2rem; }
-
+/* BUTTONS */
 .btn {
-    padding: 0.8rem 1.8rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-block;
-    transition: 0.3s;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
+
+.btn.primary {
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+.btn.secondary {
+  border: 1px solid #e5e5e5;
+  color: #0a0a0a;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 5%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
 /* Buttons */
 .btn.primary { background: var(--black); color: var(--white); }
 .btn.secondary { border: 1px solid var(--border); color: var(--black); margin-left: 1rem; }
@@ -362,5 +433,6 @@ button:hover { background-color: #357abd; }
     font-size: 0.95rem;
   }
 }
+
 
 
