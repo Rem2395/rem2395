@@ -180,18 +180,7 @@ nav {
 }
 
 .project-info .tags {
-  display: flex;
-  flex-wrap: wrap;     /* allow wrapping */
-  gap: 6px 8px;         /* spacing between tags */
-  justify-content: center; /* center on small screens */
-}
-
-.project-info .tags span {
-  display: inline-flex; /* behave like small flexible boxes */
-  font-size: 0.75rem;
-  background: var(--gray-light);
-  padding: 4px 8px;
-  border-radius: 4px;
+  white-space: normal;
 }
 
 .tags { 
