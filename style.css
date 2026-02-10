@@ -179,6 +179,8 @@ nav {
     object-fit: cover; 
 }
 
+.project-info { padding: 1.5rem; }
+
 .project-info .tags {
   white-space: normal;
 }
@@ -456,6 +458,7 @@ button:hover { background-color: #357abd; }
     font-size: 0.95rem;
   }
 }
+
 
 
 
